@@ -36,6 +36,12 @@ import UpgradeToPro from "views/UpgradeToPro/UpgradeToPro.js";
 // core components/views for RTL layout
 import RTLPage from "views/RTLPage/RTLPage.js";
 
+import AboutUs from "views/AboutUs/AboutUs.js";
+import SupportOffered from "views/SupportOffered/SupportOffered.js";
+import SupportNeeded from "views/SupportNeeded/SupportNeeded.js";
+import Resources from "views/Resources/Resources.js";
+import Data from "views/Data/Data.js";
+
 const dashboardRoutes = [
   {
     path: "/dashboard",
@@ -43,15 +49,43 @@ const dashboardRoutes = [
     rtlName: "لوحة القيادة",
     icon: Dashboard,
     component: DashboardPage,
-    layout: "/admin"
+    layout: "/admin",
+  },
+
+  {
+    path: "/aboutus",
+    name: "About Us",
+    icon: LibraryBooks,
+    component: AboutUs,
+    layout: "/admin",
   },
   {
-    path: "/user",
-    name: "User Profile",
-    rtlName: "ملف تعريفي للمستخدم",
-    icon: Person,
-    component: UserProfile,
-    layout: "/admin"
+    path: "/supportoffered",
+    name: "Support Offered",
+    icon: Language,
+    component: SupportOffered,
+    layout: "/admin",
+  },
+  {
+    path: "/supportneeded",
+    name: "Support Needed",
+    icon: Language,
+    component: SupportNeeded,
+    layout: "/admin",
+  },
+  {
+    path: "/resources",
+    name: "Resources",
+    icon: BubbleChart,
+    component: Resources,
+    layout: "/admin",
+  },
+  {
+    path: "/data",
+    name: "Data",
+    icon: LibraryBooks,
+    component: Data,
+    layout: "/admin",
   },
   {
     path: "/table",
@@ -59,7 +93,7 @@ const dashboardRoutes = [
     rtlName: "قائمة الجدول",
     icon: "content_paste",
     component: TableList,
-    layout: "/admin"
+    layout: "/admin",
   },
   {
     path: "/typography",
@@ -67,7 +101,7 @@ const dashboardRoutes = [
     rtlName: "طباعة",
     icon: LibraryBooks,
     component: Typography,
-    layout: "/admin"
+    layout: "/admin",
   },
   {
     path: "/icons",
@@ -75,7 +109,7 @@ const dashboardRoutes = [
     rtlName: "الرموز",
     icon: BubbleChart,
     component: Icons,
-    layout: "/admin"
+    layout: "/admin",
   },
   {
     path: "/maps",
@@ -83,7 +117,7 @@ const dashboardRoutes = [
     rtlName: "خرائط",
     icon: LocationOn,
     component: Maps,
-    layout: "/admin"
+    layout: "/admin",
   },
   {
     path: "/notifications",
@@ -91,7 +125,7 @@ const dashboardRoutes = [
     rtlName: "إخطارات",
     icon: Notifications,
     component: NotificationsPage,
-    layout: "/admin"
+    layout: "/admin",
   },
   {
     path: "/rtl-page",
@@ -99,7 +133,7 @@ const dashboardRoutes = [
     rtlName: "پشتیبانی از راست به چپ",
     icon: Language,
     component: RTLPage,
-    layout: "/rtl"
+    layout: "/rtl",
   },
   {
     path: "/upgrade-to-pro",
@@ -107,8 +141,8 @@ const dashboardRoutes = [
     rtlName: "التطور للاحترافية",
     icon: Unarchive,
     component: UpgradeToPro,
-    layout: "/admin"
-  }
+    layout: "/admin",
+  },
 ];
 
 export default dashboardRoutes;
