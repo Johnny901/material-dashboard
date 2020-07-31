@@ -62,12 +62,12 @@ const styles = {
 
 const useStyles = makeStyles(styles);
 
-export default function SupportOffered() {
+export default function Blog() {
   const classes = useStyles();
   return (
     <Card>
       <CardHeader className={classes.cardHeader}>
-        <h4 className={classes.cardTitleWhite}>Support Offered</h4>
+        <h4 className={classes.cardTitleWhite}>Blogs</h4>
         <p className={classes.cardCategoryWhite}></p>
       </CardHeader>
       <CardBody></CardBody>

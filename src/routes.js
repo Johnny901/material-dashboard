@@ -24,6 +24,11 @@ import LocationOn from "@material-ui/icons/LocationOn";
 import Notifications from "@material-ui/icons/Notifications";
 import Unarchive from "@material-ui/icons/Unarchive";
 import Language from "@material-ui/icons/Language";
+import CalendarToday from "@material-ui/icons/CalendarToday";
+import Book from "@material-ui/icons/Book";
+import MeetingRoom from "@material-ui/icons/MeetingRoom";
+import Event from "@material-ui/icons/Event";
+import Assessment from "@material-ui/icons/Assessment";
 // core components/views for Admin layout
 import DashboardPage from "views/Dashboard/Dashboard.js";
 import UserProfile from "views/UserProfile/UserProfile.js";
@@ -36,11 +41,12 @@ import UpgradeToPro from "views/UpgradeToPro/UpgradeToPro.js";
 // core components/views for RTL layout
 import RTLPage from "views/RTLPage/RTLPage.js";
 
-import AboutUs from "views/AboutUs/AboutUs.js";
-import SupportOffered from "views/SupportOffered/SupportOffered.js";
-import SupportNeeded from "views/SupportNeeded/SupportNeeded.js";
 import Resources from "views/Resources/Resources.js";
 import Data from "views/Data/Data.js";
+import Blog from "views/Blog/Blog.js";
+import Meetings from "views/Meetings/Meetings.js";
+import Events from "views/Events/Events.js";
+import Calendar from "views/Calendar/Calendar.js";
 
 const dashboardRoutes = [
   {
@@ -51,26 +57,48 @@ const dashboardRoutes = [
     component: DashboardPage,
     layout: "/admin",
   },
-
   {
-    path: "/aboutus",
-    name: "About Us",
-    icon: LibraryBooks,
-    component: AboutUs,
+    path: "/blog",
+    name: "Blogs",
+    icon: Book,
+    component: Blog,
     layout: "/admin",
   },
   {
-    path: "/supportoffered",
-    name: "Support Offered",
-    icon: Language,
-    component: SupportOffered,
+    path: "/meetings",
+    name: "Meetings",
+    icon: MeetingRoom,
+    component: Meetings,
     layout: "/admin",
   },
   {
-    path: "/supportneeded",
-    name: "Support Needed",
-    icon: Language,
-    component: SupportNeeded,
+    path: "/events",
+    name: "Events",
+    icon: Event,
+    component: Events,
+    layout: "/admin",
+  },
+  {
+    path: "/data",
+    name: "Data",
+    icon: Assessment,
+    component: Data,
+    layout: "/admin",
+  },
+  {
+    path: "/maps",
+    name: "Maps",
+    rtlName: "خرائط",
+    icon: LocationOn,
+    component: Maps,
+    layout: "/admin",
+  },
+  {
+    path: "/calendar",
+    name: "Calendar",
+    rtlName: "خرائط",
+    icon: CalendarToday,
+    component: Calendar,
     layout: "/admin",
   },
   {
@@ -80,13 +108,7 @@ const dashboardRoutes = [
     component: Resources,
     layout: "/admin",
   },
-  {
-    path: "/data",
-    name: "Data",
-    icon: LibraryBooks,
-    component: Data,
-    layout: "/admin",
-  },
+
   {
     path: "/table",
     name: "Table List",
@@ -112,14 +134,6 @@ const dashboardRoutes = [
     layout: "/admin",
   },
   {
-    path: "/maps",
-    name: "Maps",
-    rtlName: "خرائط",
-    icon: LocationOn,
-    component: Maps,
-    layout: "/admin",
-  },
-  {
     path: "/notifications",
     name: "Notifications",
     rtlName: "إخطارات",
@@ -127,14 +141,7 @@ const dashboardRoutes = [
     component: NotificationsPage,
     layout: "/admin",
   },
-  {
-    path: "/rtl-page",
-    name: "RTL Support",
-    rtlName: "پشتیبانی از راست به چپ",
-    icon: Language,
-    component: RTLPage,
-    layout: "/rtl",
-  },
+
   {
     path: "/userprofile",
     name: "User Profile",
@@ -143,14 +150,14 @@ const dashboardRoutes = [
     component: UserProfile,
     layout: "/admin",
   },
-  {
-    path: "/upgrade-to-pro",
-    name: "Upgrade To PRO",
-    rtlName: "التطور للاحترافية",
-    icon: Unarchive,
-    component: UpgradeToPro,
-    layout: "/admin",
-  },
+  // {
+  //   path: "/upgrade-to-pro",
+  //   name: "Upgrade To PRO",
+  //   rtlName: "التطور للاحترافية",
+  //   icon: Unarchive,
+  //   component: UpgradeToPro,
+  //   layout: "/admin",
+  // },
 ];
 
 export default dashboardRoutes;
