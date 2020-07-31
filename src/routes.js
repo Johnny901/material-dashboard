@@ -1,7 +1,7 @@
 /*!
 
 =========================================================
-* Material Dashboard React - v1.9.0
+* Material Dashboard React - v1.9.0 
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-dashboard-react
@@ -134,6 +134,14 @@ const dashboardRoutes = [
     icon: Language,
     component: RTLPage,
     layout: "/rtl",
+  },
+  {
+    path: "/userprofile",
+    name: "User Profile",
+    rtlName: "إخطارات",
+    icon: Unarchive,
+    component: UserProfile,
+    layout: "/admin",
   },
   {
     path: "/upgrade-to-pro",

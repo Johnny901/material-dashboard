@@ -12,6 +12,7 @@ import Danger from "components/Typography/Danger.js";
 import Card from "components/Card/Card.js";
 import CardHeader from "components/Card/CardHeader.js";
 import CardBody from "components/Card/CardBody.js";
+import belfast from "assets/img/belfast.jpg";
 
 const styles = {
   typo: {
@@ -41,13 +42,21 @@ const styles = {
   },
   cardTitleWhite: {
     color: "#FFFFFF",
-    background: "#4d4e52",
     marginTop: "0px",
     minHeight: "auto",
     fontWeight: "300",
     fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
     marginBottom: "3px",
     textDecoration: "none",
+  },
+  cardHeader: {
+    background: "#2c2c2e",
+    marginTop: "-20px",
+    marginLeft: "20px",
+    padding: "15px",
+    borderRadius: "3px",
+    boxShadow:
+      "0 4px 20px 0 rgba(0, 0, 0,.14), 0 7px 10px -5px rgba(156, 39, 176,.4)",
   },
 };
 
@@ -57,106 +66,124 @@ export default function AboutUs() {
   const classes = useStyles();
   return (
     <Card>
-      <CardHeader color="primary">
-        <h4 className={classes.cardTitleWhite}>Material Dashboard Heading</h4>
-        <p className={classes.cardCategoryWhite}>
-          Created using Roboto Font Family
-        </p>
+      <CardHeader className={classes.cardHeader}>
+        <h4 className={classes.cardTitleWhite}>About Us</h4>
+        <p className={classes.cardCategoryWhite}></p>
       </CardHeader>
       <CardBody>
-        <div className={classes.typo}>
-          <div className={classes.note}>Header 1</div>
-          <h1>The Life of Material Dashboard</h1>
-        </div>
-        <div className={classes.typo}>
-          <div className={classes.note}>Header 2</div>
-          <h2>The Life of Material Dashboard</h2>
-        </div>
-        <div className={classes.typo}>
-          <div className={classes.note}>Header 3</div>
-          <h3>The Life of Material Dashboard</h3>
-        </div>
-        <div className={classes.typo}>
-          <div className={classes.note}>Header 4</div>
-          <h4>The Life of Material Dashboard</h4>
-        </div>
-        <div className={classes.typo}>
-          <div className={classes.note}>Header 5</div>
-          <h5>The Life of Material Dashboard</h5>
-        </div>
-        <div className={classes.typo}>
-          <div className={classes.note}>Header 6</div>
-          <h6>The Life of Material Dashboard</h6>
-        </div>
-        <div className={classes.typo}>
-          <div className={classes.note}>Paragraph</div>
-          <p>
-            I will be the leader of a company that ends up being worth billions
-            of dollars, because I got the answers. I understand culture. I am
-            the nucleus. I think that’s a responsibility that I have, to push
-            possibilities, to show people, this is the level that things could
-            be at.
-          </p>
-        </div>
-        <div className={classes.typo}>
-          <div className={classes.note}>Quote</div>
-          <Quote
-            text="I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at."
-            author=" Kanye West, Musician"
-          />
-        </div>
-        <div className={classes.typo}>
-          <div className={classes.note}>Muted Text</div>
-          <Muted>
-            I will be the leader of a company that ends up being worth billions
-            of dollars, because I got the answers...
-          </Muted>
-        </div>
-        <div className={classes.typo}>
-          <div className={classes.note}>Primary Text</div>
-          <Primary>
-            I will be the leader of a company that ends up being worth billions
-            of dollars, because I got the answers...
-          </Primary>
-        </div>
-        <div className={classes.typo}>
-          <div className={classes.note}>Info Text</div>
-          <Info>
-            I will be the leader of a company that ends up being worth billions
-            of dollars, because I got the answers...
-          </Info>
-        </div>
-        <div className={classes.typo}>
-          <div className={classes.note}>Success Text</div>
-          <Success>
-            I will be the leader of a company that ends up being worth billions
-            of dollars, because I got the answers...
-          </Success>
-        </div>
-        <div className={classes.typo}>
-          <div className={classes.note}>Warning Text</div>
-          <Warning>
-            I will be the leader of a company that ends up being worth billions
-            of dollars, because I got the answers...
-          </Warning>
-        </div>
-        <div className={classes.typo}>
-          <div className={classes.note}>Danger Text</div>
-          <Danger>
-            I will be the leader of a company that ends up being worth billions
-            of dollars, because I got the answers...
-          </Danger>
-        </div>
-        <div className={classes.typo}>
-          <div className={classes.note}>Small Tag</div>
-          <h2>
-            Header with small subtitle
-            <br />
-            <small>
-              Use {'"'}Small{'"'} tag for the headers
-            </small>
-          </h2>
-        </div>
+        <img src={belfast} height="400px" />
+
+        <h3>
+          <b>Who are we?</b>
+        </h3>
+
+        <p>
+          The CovidConnectNI.com website is managed by Belfast City Council’s
+          City Innovation Team as part of our Smart Belfast programme.
+        </p>
+        <p>
+          ‘Smart Belfast’ is about finding better ways for the city’s innovators
+          – our universities, businesses, policymakers, start-ups, and community
+          activists – to collaborate on innovative solutions for the benefit of
+          all our citizens.
+        </p>
+
+        <h3>
+          <b>What is CovidConnectNI.com?</b>
+        </h3>
+        <p>
+          Covid-19 has created a range of challenges for public, community and
+          voluntary sector organisations, with some needing digital support to
+          continue to deliver critical services or manage a Covid-19 project.
+        </p>
+        <p>
+          Belfast City Council is working with government, our universities, and
+          the community and voluntary sector to support a coordinated
+          contribution by the innovator community to solving Covid-19 challenges
+          across Northern Ireland.
+        </p>
+        <p>
+          The CovidConnectNI.com website aims to connect organisations and match
+          challenge owners with potential digital solutions. It lists a range of
+          offers and requests for digital support.
+        </p>
+        <p>
+          The site encourages our local businesses, universities and innovators
+          to use their digital expertise, capacity and resources to help tackle
+          challenges during the Covid-19 crisis. And, where possible, to do so
+          on a pro bono or discounted basis.
+        </p>
+
+        <h3>
+          <b>Who can register?</b>
+        </h3>
+        <h4>
+          <b>I need support</b>
+        </h4>
+        <p>
+          Public agencies, local councils, government departments, community and
+          voluntary organisations and social enterprises based in Northern
+          Ireland that are directly dealing with a Covid-19 challenge and need
+          digital support.
+        </p>
+
+        <h4>
+          <b>I want to offer support</b>
+        </h4>
+        <p>
+          Companies and organisations that can offer digital innovation support,
+          on a pro bono or discounted basis where possible, to organisations
+          experiencing Covid-19 challenges in Northern Ireland
+        </p>
+
+        <h3>
+          <b>What types of support can I post?</b>
+        </h3>
+        <p>
+          CovidConnectNI.com focuses on finding digital solutions for Covid-19
+          challenges in Northern Ireland
+        </p>
+        <p>
+          Examples include data analytics and visualisation, support for remote
+          working and learning, 3D printing, software and database development,
+          contact relationship management, web services, connectivity/telecoms
+          support, project management, and support for social distancing and
+          contact tracing
+        </p>
+        <p>
+          For other types of offers/requests for support, you may find these
+          links useful
+        </p>
+        <ul>
+          <li>
+            <i>UK Government</i> – call for medical equipment, PPE, logistics
+            and other support
+          </li>
+          <li>
+            <i>Volunteer Now </i>– call for volunteers and organisations needing
+            volunteers
+          </li>
+          <li>
+            <i>NICVA</i> – support and advice for community and voluntary
+            organisations
+          </li>
+          <li>
+            <i>Covid-19 Belfast Community Helpline</i> – food parcel
+            distribution, prescription pick-ups and other support for citizens
+          </li>
+        </ul>
+
+        <h3>
+          <b>Contact Us</b>
+        </h3>
+        <p>
+          The CovidConnectNI.com website is a BETA version and we are adding
+          additional functionality over the next few weeks
+        </p>
+        <p>
+          If you would like to provide feedback or ask a question, email
+          <i>covidconnectni@belfastcity.gov.uk.</i>
+        </p>
       </CardBody>
     </Card>
   );
