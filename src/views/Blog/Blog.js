@@ -44,7 +44,7 @@ const styles = {
     color: "#FFFFFF",
     marginTop: "0px",
     minHeight: "auto",
-    fontWeight: "300",
+    fontWeight: "300", 
     fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
     marginBottom: "3px",
     textDecoration: "none",
@@ -67,7 +67,7 @@ export default function Blog() {
   return (
     <Card>
       <CardHeader className={classes.cardHeader}>
-        <h4 className={classes.cardTitleWhite}>Blogs</h4>
+        <h4 className={classes.cardTitleWhite}>Blog</h4>
         <p className={classes.cardCategoryWhite}></p>
       </CardHeader>
       <CardBody></CardBody>

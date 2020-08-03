@@ -59,18 +59,18 @@ const dashboardRoutes = [
   },
   {
     path: "/blog",
-    name: "Blogs",
+    name: "Blog",
     icon: Book,
     component: Blog,
     layout: "/admin",
   },
-  {
-    path: "/meetings",
-    name: "Meetings",
-    icon: MeetingRoom,
-    component: Meetings,
-    layout: "/admin",
-  },
+  // {
+  //   path: "/meetings",
+  //   name: "Meetings",
+  //   icon: MeetingRoom,
+  //   component: Meetings,
+  //   layout: "/admin",
+  // },
   {
     path: "/events",
     name: "Events",
